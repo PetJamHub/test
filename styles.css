@@ -32,6 +32,54 @@ header h1 {
     color: #fff;
     font-size: 2.2rem;
 }
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b9f6ca;
+}
+
+.header-button {
+    background-color: #fff;
+    color: #4CAF50;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button:hover {
+    background-color: #b9f6ca;
+    color: #2e7d32;
+}
 
 h2 {
     font-size: 1.8rem;
