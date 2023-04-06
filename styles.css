@@ -6,28 +6,43 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #333;
-    padding: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 5px;
 }
 
 header h1 {
     color: #fff;
-    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 main {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .gallery {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .image-container img {
@@ -38,17 +53,22 @@ main {
     border-radius: 5px;
 }
 
-.description {
-    margin-bottom: 2rem;
+.description,
+.marketing {
+    text-align: justify;
 }
 
 .contact {
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact-form {
     display: grid;
     gap: 1rem;
+    width: 100%;
+    max-width: 400px;
 }
 
 #contact-form label {
@@ -59,6 +79,7 @@ main {
 #contact-form textarea {
     padding: 0.5rem;
     width: 100%;
+    font-size: 1rem;
 }
 
 #contact-form textarea {
@@ -74,6 +95,7 @@ main {
     border: none;
     font-weight: bold;
     transition: background-color 0.3s;
+    font-size: 1rem;
 }
 
 #contact-form button:hover {
@@ -85,5 +107,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
 }
-
