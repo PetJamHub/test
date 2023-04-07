@@ -32,7 +32,9 @@
     </script>
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
+      
         <div class="header-container">
             <a href="#" class="logo" aria-label="PetJam Home">PetJam</a>
             <nav aria-label="Main Navigation">
@@ -47,7 +49,7 @@
         </div>
     </header>
     <main>
-        <br><br>
+        <br>
         <div class="gallery">
           <div class="image-container">
             <!-- Add your images here -->
@@ -83,6 +85,26 @@
         
           </div>
         </div>
+
+        <div id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days"></span>
+            <span class="countdown-label">days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours"></span>
+            <span class="countdown-label">hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes"></span>
+            <span class="countdown-label">minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds"></span>
+            <span class="countdown-label">seconds</span>
+          </div>
+        </div>
+        
 
       <section class="aboutus" id="aboutus">
         <h2>Welcome to Kadena PetJam world!</h2>
@@ -128,7 +150,7 @@
             </ul>
             <p>We are committed to creating a successful NFT project and are excited to share this journey with you. Thank you for your support, and we look forward to achieving our goals together.</p>
         </section>
-
+        
         <div class="gallery">
           <div class="image-container">
             <!-- Add your images here -->
@@ -166,30 +188,39 @@
           </div>
         </div>
 
+        <h1> Coming to your favorite NFT marketplace very soon!</h1>
+        <br>
 
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Terms and Conditions</a></li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <section class="contact" id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </section>
-              </main>
-         <footer>
-                &copy; 2023 Kadena PetJam Kingdom. All Rights Reserved.
-         </footer>
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p class="text-muted">Copyright &copy; 2023 PetJam Digital Pets. All Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+
+          
+        </footer>
+
+  
+  
     <script src="scripts.js"></script>
+  </main>
             </body>
 </html>

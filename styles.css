@@ -24,6 +24,7 @@ a {
 }
 
 h1 {
+  align-items: center;
   font-size: 40px;
   font-style: italic;
 }
@@ -32,6 +33,7 @@ h2 {
   font-size: 3.8rem;
   margin-bottom: 1rem;
 }
+
 
 /* Header styles */
 header {
@@ -218,6 +220,8 @@ nav ul li a:hover {
   font-size: 2rem;
 }
 
+/* mobile view */
+
 @media only screen and (max-width: 768px) {
 
   .header-container {
@@ -273,4 +277,72 @@ nav ul li a:hover {
     margin-top: 20px;
     margin-bottom: 10px;
   }
+}
+
+
+/* footer styles */
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="text-muted">Copyright &copy; 2023 Digital Pets. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+/* countdown */
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-item {
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.countdown-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+
+
+/* go to top buton */
+
+#myBtn {
+  display: inline;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #333;
 }
