@@ -217,3 +217,60 @@ nav ul li a:hover {
   margin-bottom: 30px;
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .header-button {
+    margin-top: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .menu-icon:hover {
+    color: #ffd700;
+  }
+
+  .show-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .show-menu ul li {
+    margin: 10px 0;
+  }
+
+  .show-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show-menu .header-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
