@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  align-items: center;
 
 }
 
@@ -123,7 +122,7 @@ nav ul li a:hover {
 .gallery .image-container {
   display: flex;
   flex-wrap: nowrap;
-  animation: scrollAnimation 140s linear infinite; 
+  animation: scrollAnimation 600s linear infinite; 
   /* Adjust animation duration here */
 }
 .gallery::before,
