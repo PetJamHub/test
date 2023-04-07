@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  align-items: center;
 }
 
 body {
@@ -144,7 +145,7 @@ nav ul li a:hover {
 
 /* Roadmap styles */
 .roadmap {
-  text-align: center;
+  text-align: ;
   padding: 20px;
 }
 
