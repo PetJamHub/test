@@ -112,38 +112,60 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+.gallery::before,
+.gallery::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.gallery::before {
+  left: 0;
+  background-image: linear-gradient(to right, #f8f8f8, transparent);
+}
+
+.gallery::after {
+  right: 0;
+  background-image: linear-gradient(to left, #f8f8f8, transparent);
+}
+
 .gallery .image-container {
   display: flex;
   flex-wrap: nowrap;
-  animation: scrollAnimation 5s linear infinite; /* Adjust animation duration here */
+  animation: scrollAnimation 10s linear infinite; 
+  /* Adjust animation duration here */
 }
 
 .gallery img {
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
   box-shadow: 0px 0px 5px rgba(49, 49, 49, 0.5);
   filter: grayscale(20%);
   transition: all 0.5s ease-in-out;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .gallery img:hover {
   filter: none;
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 
 @keyframes scrollAnimation {
-  
   0% {
-    width: 150px;
+    width: 250px;
     transform: translateX(10%);
   }
   100% {
-    width: 150px;
-    transform: translateX(calc(-100% - 120px));
+    width: 250px;
+    transform: translateX(calc(-0% - 120px));
   }
 }
+
 
 /* About Us styles */
 .aboutus {
